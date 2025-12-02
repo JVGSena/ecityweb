@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-CITY - Ingeniería Eléctrica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER STICKY -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="/" class="logo">
+        <img src="logo.png" alt="E-CITY Logo">
+      </a>
+
+      <!-- Botón menú hamburguesa -->
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <nav class="site-nav" id="siteNav">
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#empresa">Nuestra Empresa</a></li>
+          <li><a href="#trayectoria">Trayectoria</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ESPACIO PARA QUE EL MENU FLOTANTE NO TAPE EL CONTENIDO -->
+  <div class="header-spacer"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Especialistas en proyectos eléctricos y mediciones</h1>
+      <p>E-CITY brinda soluciones confiables, seguras y eficientes en proyectos eléctricos, mediciones y mantenimientos.</p>
+      <a href="#contacto" class="btn">Contáctenos</a>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="services">
+    <div class="container">
+      <h2>Servicios</h2>
+
+      <div class="services-grid">
+        <div class="service-card">Pruebas VLF / diagnóstico de cables MT & AT</div>
+        <div class="service-card">Mediciones y pruebas eléctricas</div>
+        <div class="service-card">Mantenimientos preventivos y correctivos</div>
+        <div class="service-card">Subestaciones eléctricas</div>
+        <div class="service-card">Alquiler de equipos</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EMPRESA -->
+  <section id="empresa" class="about">
+    <div class="container">
+      <h2>Nuestra Empresa</h2>
+      <p>E-CITY es una empresa especializada en mediciones, pruebas eléctricas y proyectos llave en mano para subestaciones e instalaciones industriales. Nuestra experiencia y compromiso con la seguridad nos distinguen en el mercado.</p>
+    </div>
+  </section>
+
+  <!-- TRAYECTORIA -->
+  <section id="trayectoria" class="stats">
+    <div class="container stats-grid">
+
+      <div class="stat-item">
+        <strong>+11</strong>
+        <span>Años de experiencia</span>
+      </div>
+
+      <div class="stat-item">
+        <strong>+350</strong>
+        <span>Proyectos ejecutados</span>
+      </div>
+
+      <div class="stat-item">
+        <strong>95%</strong>
+        <span>Satisfacción de clientes</span>
+      </div>
+
+      <div class="stat-item">
+        <strong>100%</strong>
+        <span>Entregas a tiempo</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="site-footer">
+    <div class="container">
+      <p>E-CITY © 2025 | Bogotá, Colombia</p>
+    </div>
+  </footer>
+
+  <!-- JS DEL MENÚ -->
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('siteNav');
+
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
