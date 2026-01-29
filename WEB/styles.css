@@ -2,7 +2,7 @@
 :root {
   --primary: #4CAF50;
   --text: #e8e8e8;
-  --bg: #111;
+  --bg: hsl(0, 0%, 2%);
   --card-bg: #1b1b1b;
 }
 
@@ -38,7 +38,8 @@ body {
 }
 
 .header-spacer {
-  height: 120px; /* evita que el header tape el contenido */
+  height: 120px;
+  /* evita que el header tape el contenido */
 }
 
 /* HEADER STRUCTURE */
@@ -51,8 +52,8 @@ body {
 
 /* LOGO */
 .logo img {
-  height: 100px;
-  width: 100px;
+  height: 300px;
+  width: 300px;
   object-fit: contain;
 }
 
