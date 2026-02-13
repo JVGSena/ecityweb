@@ -1,201 +1,51 @@
-/* VARIABLES */
-:root {
-  --primary: #4CAF50;
-  --text: #e8e8e8;
-  --bg: hsl(0, 0%, 2%);
-  --card-bg: #1b1b1b;
-}
-
-* {
+/* DISEÑO BASE - ENGINEERING CITY */
+body {
+  background-color: #2f2f2f;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/assets/fondo/ecity.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 }
 
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* HEADER FLOTANTE */
-.site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #000;
-  border-bottom: 1px solid #222;
-  z-index: 999;
-  padding: 1rem 0;
-}
-
-.header-spacer {
-  height: 120px;
-  /* evita que el header tape el contenido */
-}
-
-/* HEADER STRUCTURE */
-.header-inner {
+/* CONTENEDOR CENTRAL DE BOTONES */
+.container-buttons {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+  /* Centrado total en la pantalla */
+  gap: 20px;
 }
 
-/* LOGO */
-.logo img {
-  height: 400px;
-  width: 00px;
-  object-fit: contain;
-}
-
-/* NAV */
-.site-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.2rem;
-}
-
-.site-nav a {
-  color: var(--text);
-  text-decoration: none;
-  transition: .3s;
-}
-
-.site-nav a:hover {
-  color: var(--primary);
-}
-
-/* HAMBURGUESA */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
+/* ESTILO PROFESIONAL DE BOTONES */
+.button-engineering {
+  padding: 18px 35px;
+  width: 280px;
+  border: 2px solid #4CAF50;
+  /* Tu verde institucional */
+  background: rgba(0, 0, 0, 0.7);
   color: white;
-  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
   cursor: pointer;
-}
-
-@media (max-width: 768px) {
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .site-nav {
-    display: none;
-    width: 100%;
-    background: #000;
-    padding: 1rem 0;
-    margin-top: 1rem;
-    border-top: 1px solid #222;
-  }
-
-  .site-nav ul {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-
-  .site-nav.active {
-    display: block;
-  }
-
-  /* Ajuste del espaciador cuando el header reduce tamaño móvil */
-  .header-spacer {
-    height: 90px;
-  }
-}
-
-/* HERO */
-.hero {
+  transition: all 0.3s ease;
+  border-radius: 8px;
   text-align: center;
-  padding: 4rem 0;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  max-width: 650px;
-  margin: 0 auto 2rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: .8rem 1.6rem;
-  background: var(--primary);
-  color: white;
-  border-radius: 5px;
   text-decoration: none;
+  letter-spacing: 1px;
 }
 
-/* SERVICIOS */
-.services {
-  padding: 3rem 0;
-}
-
-.services h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: var(--primary);
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
-.service-card {
-  background: var(--card-bg);
-  padding: 1.5rem;
-  border-radius: 6px;
-  text-align: center;
-}
-
-/* ABOUT */
-.about {
-  padding: 3rem 0;
-}
-
-.about h2 {
-  text-align: center;
-  color: var(--primary);
-  margin-bottom: 1rem;
-}
-
-/* STATS */
-.stats {
-  padding: 3rem 0;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2rem;
-  text-align: center;
-}
-
-.stat-item strong {
-  font-size: 2.2rem;
-  color: var(--primary);
-  display: block;
-}
-
-/* FOOTER */
-.site-footer {
-  text-align: center;
-  padding: 2rem 0;
-  color: #777;
+/* EFECTO AL PASAR EL MOUSE */
+.button-engineering:hover {
+  background: #4CAF50;
+  color: black;
+  transform: translateY(-5px);
+  /* Pequeño salto hacia arriba */
+  box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
 }
